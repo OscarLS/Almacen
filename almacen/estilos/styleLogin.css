@@ -1,0 +1,83 @@
+/* ---------- Estilo del Login ---------- */
+
+/* ---------- Contenedores ---------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Candara', sans-serif;
+}
+
+body{
+    background-image: url('sso.webp');
+    background-size: 100% 110%;
+}
+
+.contenedor{ /* Contenedor principal */
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-contenedor{ /* Contenedor del login */
+    display: flex;
+    width: 650px;
+    height: auto;
+}
+
+.IS{
+    padding: 40px;
+    text-align: center;
+    background: white;
+    opacity: 0.8;
+}  
+
+/* ---------- Titulos y Texto ---------- */
+
+h2{
+    color: black;
+    margin-bottom: 45px; 
+    text-align: center;
+}
+
+label{
+    font-size: 20px;
+    color:  black;
+    border-bottom: 1px solid black;
+    font-weight: bold;
+}
+
+/* ---------- Botones y hipervinculos ---------- */
+
+.IS input{
+    background: #9D9B96;
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom: 1px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.enviar{
+    width: auto;
+    padding: 10px;
+    background: transparent;
+    color: black;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.enviar:hover{
+    background: black;
+    color: white;
+}

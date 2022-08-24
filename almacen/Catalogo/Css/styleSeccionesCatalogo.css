@@ -1,0 +1,300 @@
+/* ---------- Estilo de Opciones ---------- */
+
+/* ---------- Contenedores ---------- */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #f1f1f1;
+}
+
+.contenedor{ /* Contenedor principal */
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cabecera{ /* Cabecera */
+    width: 720px;
+    height: 40px;
+    background: #bfdfbf;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #7fbf7f;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.cuerpoUp{ /*  Cuerpo */
+    width: 720px;
+    height: auto;
+    background: white;
+    border: 1px solid #7fbf7f;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.alta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.CuerpoDown{ /* Lista */
+    width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.buscador{
+    width: 1200px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+}
+
+/* ---------- Titulos y Texto ---------- */
+
+h3{
+    margin-left: 10px;
+    color: #005000;
+    font-family: Arial;
+}
+
+b{
+    color: #005000;
+    font-family: Arial;
+}
+
+/* ---------- Tabla ---------- */
+
+.titulo{
+    background: #1F618D;  
+    color: white;
+    font-size: 16px;
+    text-align: left;
+    font-weight: bold;
+    font-family: Arial;
+    padding: 5px 0px 5px 5px;
+}
+
+.lD{
+    font-size: 16px;
+    text-align: left;
+    width: 200px;
+    height: 25px;
+    font-weight: bold;
+    font-family: Arial;
+}
+
+.TablaP{
+    border-spacing: 5px;
+}
+
+.Tabla{
+    border-collapse: collapse;
+    width: auto;
+    height: auto;
+    background-color: white;
+    border: 2px solid #1F618D;
+}
+
+th{
+    text-align: center;
+    padding: 8px;
+    border: 2px solid #1F618D;
+    font-size: 15px;
+}
+
+.Lista{
+    text-align: center;
+    padding: 10px;
+    border: 2px solid #1F618D;
+    font-size: 12px;
+}
+
+/* ---------- Botones y hipervinculos ---------- */
+
+.box{
+    color: #005000;
+    font-family: Arial;
+    margin-right: 10px;
+}
+
+.input_1{
+    padding-left: 10px;
+    width: 270px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: Arial;
+}
+
+.input_2{
+    padding-left: 10px;
+    width: 170px;
+    height: 30px;   
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: Arial;
+}
+
+.input_3{
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 685px;
+    height: 150px;  
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: Arial;
+    resize: none;
+}
+
+.input_4{
+    padding-left: 10px;
+    width: 120px;
+    height: 30px;  
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: Arial;
+}
+
+.input_5{
+    padding-left: 10px;
+    padding-top: 10px;
+    width: 350px;
+    height: 20px;  
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: Arial;
+    resize: none;
+}
+
+.input_6{
+    padding-left: 10px;
+    width: 450px;
+    height: 30px;  
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: Arial;
+    resize: none;
+}
+
+.BTG{
+    text-decoration: none;
+    padding: 12px 20px 12px 20px;
+    font-weight: bold;
+    color: white;
+    background: #3f9f3f;
+    text-align: center;
+    font-size: 15px;
+    float: right;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #3f9f3f;
+    font-family: Arial;
+}
+
+.BTG:hover{
+    background: black;
+    border: 1px solid black;
+    color: white;
+}
+
+.ME{  /* Modificar/Eliminar */
+    text-decoration: none;
+    background: darkcyan;
+    color: white;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 5%;
+}
+
+.ME:hover{
+    background: black;
+    border-radius: 5px;
+}
+
+.btn_buscar{ /* Input buscar */
+    padding: 10px 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    font-size: 15px;
+    border: 2px solid black;
+}
+
+.btn_regresar{ /* Boton regresar/incial */
+    background: #1F618D;
+    padding: 10px 30px;
+    border: 0;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: Arial;
+    border-radius: 10px;
+    font-size: 16px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn_regresar:hover{
+    background: #111;
+}
+
+.agregar{
+    font-weight: bold;
+    color: white;
+    background: #3f9f3f;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    height: 30px;
+    width: 15px;
+    border-radius: 5px;
+    border: 1px solid #3f9f3f;
+    font-family: Arial;
+}
+
+.agregar:hover{
+    background: #317a31;
+    border: 1px solid #317a31;
+}
+
+.BTA{
+    width: 20px;
+    height: 30px;
+    font-weight: bold;
+    color: white;
+    background: #3f9f3f;
+    text-align: center;
+    font-size: 15px;
+    float: right;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #3f9f3f;
+    font-family: Arial;
+}
+
+.BTA:hover{
+    background: black;
+    border: 1px solid black;
+    color: white;
+}

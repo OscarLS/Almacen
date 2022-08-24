@@ -1,0 +1,167 @@
+/* ---------- Estilo de Catalogo ---------- */
+
+/* ---------- Contenedores ---------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../Img/sso.webp');
+    background-size: 100% 110%;
+}
+
+.contenedor { /* Contenedor principal */
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cuerpo { /* Cuerpo */
+    width: auto;
+    height: auto;
+    display: inline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.contratos{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #004646;
+    border: 3px solid #111110; 
+}
+
+.remision{
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #004646;
+    border: 3px solid #111110;
+}
+
+.salida{
+    margin-top: 20px;
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: #004646;
+    border: 3px solid #111110;
+}
+
+.contract{
+    width: auto;
+    height: auto;
+    display: inline;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.remission{
+    width: auto;
+    height: auto;
+    display: inline;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.exit{
+    width: auto;
+    height: auto;
+    display: inline;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+article { /* Estilo - Secciones */
+    width: 160px;
+    height: 120px;
+    background: darkcyan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 12px 15px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+article:hover {
+    background: #111;
+}
+
+.pie {  /* Pie de página */
+    width: auto;
+    height: auto;
+    display: inline;
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------- Botones y hipervinculos ---------- */
+
+.BTMC{   /* Menu principal/Cerrar sesion */
+    text-decoration: none;
+    background: #102C54;
+    color: white;
+    text-align: center;
+    width: 300px;
+    height: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    float:left;
+    padding: 25px;
+    margin: 25px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.BTMC:hover{
+    background: #111;
+}
+
+/* ---------- Texto y Titulos ---------- */
+
+.BTN_S{   /* Nombre de Seccion */
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 5px;
+    margin-top: 5px;
+    font-weight: bold;
+} 
+
+h2{
+    padding-top: 10px;
+    color: white;
+}

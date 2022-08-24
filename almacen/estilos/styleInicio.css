@@ -1,0 +1,93 @@
+/* ---------- Estilo de Inicio de Producto y Mobiliario ---------- */
+
+/* ---------- Contenedores ---------- */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('sso.webp');
+    background-size: 100% 110%;
+}
+
+.contenedor { /* Contenedor principal */
+    width: 100%;
+    height: 100vh;
+    padding: 16%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cuerpo { /* Cuerpo */
+    width: auto;
+    height: auto;
+    display: inline;
+    display: flex;
+    justify-content: center;
+}
+
+article { /* Secciones */
+    width: 350px;
+    height: 300px;
+    background: darkcyan;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 10px 10px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+article:hover {
+    background: #111;
+}
+
+.pie {  /* Pie de página */
+    width: auto;
+    height: auto;
+    display: inline;
+    display: flex;
+    justify-content: center;
+}
+
+/* ---------- Botones y hipervinculos ---------- */
+
+.BTMC{   /* Menu principal/Cerrar sesion */
+    text-decoration: none;
+    background: #102C54;
+    color: white;
+    text-align: center;
+    width: 300px;
+    height: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    float:left;
+    padding: 25px;
+    margin: 25px;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.BTMC:hover{
+    background: #111;
+}
+
+/* ---------- Texto y Titulos ---------- */
+
+.BTN_S{   /* Nombre de Seccion */
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    font-size: 25px;
+    padding: 10px;
+    margin-top: 30px;
+    font-weight: bold;
+} 
