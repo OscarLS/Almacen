@@ -8,9 +8,10 @@
             $nombre = $reg['Nombre'];
             $unidad = $reg['UnidadAplicativa'];
             $descripcion = $reg['Descripcion'];
-            $showN = " <input type='text' value='$nombre' class='input_1_show' name='nombre' id='nombre' readonly > ";
+            $showN = $nombre;
             $showU = " <input type='text' value='$unidad' class='input_1_show' name='tipounidad' id='tipounidad' readonly > ";
             $showD = " <textarea name='descripcion' id='descripcion' class='input_3' readonly > $descripcion </textarea> ";
+            
             echo "$showU,$showN,$showD";
         } 
     }else{

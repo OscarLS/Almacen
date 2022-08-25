@@ -88,6 +88,18 @@ $(document).ready(function () {
   }
   loadOptionArticulo();
 
+  ///////////////// Mostrar producto ///////////////// 
+  function loadListArticulo() {
+    $.ajax({
+      url: "../Ver/verListProductos.php",
+      type: "POST",
+      success: function (data) {
+        $("#listArticulos").html(data);
+      },
+    });
+  }
+  loadListArticulo();
+
   /////////////////////////////////////////////////////////////////////////////////////////////////////////
 
    ///////////////// Buscar producto ///////////////// 
@@ -102,8 +114,7 @@ $(document).ready(function () {
           var nombre = data.split(",")[1];
           var unidad = data.split(",")[0];
           var descripcion = data.split(",")[2];
-          $("#product input").remove();
-          $("#product").append(nombre);
+          $('#nombre').val(nombre);
           $("#unit input").remove();
           $("#unit").append(unidad);
           $("#explicacion textarea").remove();
@@ -113,6 +124,35 @@ $(document).ready(function () {
       return false;
     });
   });
+  
+  $(function () {
+    $("#nombre").on("change", function () {
+     
+    var val=$('#nombre').val();
+    var ejemplo = $('#listArticulos').find('option[value="'+val+'"]').data('ejemplo');
+    //alert(ejemplo);
+    $.ajax({
+      url: "../Ver/BuscarProducto.php",
+      type: "POST",
+      data: "id=" + ejemplo,
+      success: function (data) {
+        var nombre = data.split(",")[1];
+        var unidad = data.split(",")[0];
+        var descripcion = data.split(",")[2];
+        $("#unit input").remove();
+        $("#unit").append(unidad);
+        $("#explicacion textarea").remove();
+        $("#explicacion").append(descripcion);
+        $("#producto").val(ejemplo);
+        $("#nombre").val(nombre);
+        loadListArticulo();
+      },
+    });
+    return false;
+    });
+  });
+  /*$("#nombre").on('input',function(){
+  });*/
   ///////////////// Subir partida ///////////////// 
   $("#btnRegistroPartida").click(function (e) {
     e.preventDefault();
