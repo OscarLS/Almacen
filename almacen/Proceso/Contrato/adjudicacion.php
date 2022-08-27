@@ -526,6 +526,23 @@ if (!isset($id, $nombre, $apellido)) {
     var cantidadCaptura = document.getElementById("cantidad").value;
     var importeCaptura = parseFloat((precioCaptura * cantidadCaptura).toFixed(2));
     var indiceCaptura = document.getElementById("indice").value;
+    alert(contratoCaptura+
+fechaCaptura+
+financiamientoCaptura+
+partidaCaptura+
+programaCaptura+
+unidadCaptura+
+proveedorCaptura+
+ivaCaptura+
+producto+
+claveCaptura+
+nombreCaptura+
+tipoCaptura+
+descripcionCaptura+
+precioCaptura+
+cantidadCaptura+
+importeCaptura+
+indiceCaptura)
     total = new Datos(contratoCaptura, fechaCaptura, financiamientoCaptura, partidaCaptura, programaCaptura,
       unidadCaptura, proveedorCaptura, ivaCaptura, claveCaptura, nombreCaptura, tipoCaptura, descripcionCaptura, precioCaptura,
       cantidadCaptura, indiceCaptura, importeCaptura);
