@@ -47,6 +47,11 @@ if (!isset($id, $nombre, $apellido)) {
 			include_once('ModalVer.php');
 		?>
 	</div>
+	<div>
+		<?php
+			include_once('ModalEliminar.php');
+		?>
+	</div>
 </body>
 
 </html>

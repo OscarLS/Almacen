@@ -44,7 +44,7 @@
                 <td class="Lista" >'.$mostrar['Proveedor'].'</td>
 				<td class="Lista" >'.'<a class="ME" id="btnVer" onclick="ver('.$mostrar['Id'].');" >Ver</a>'.'</td>
 				<td class="Lista" >'.'<a class="ME" href="ModificarProducto.php?id='.$mostrar['Id'].'">Modificar</a>'.'</td>
-				<td class="Lista" >'.'<a class="ME" onclick="return ConfirmarDelete()" href="EliminarProducto.php?id='.$mostrar['Id'].'">Eliminar</a>'.'</td>
+				<td class="Lista" >'.'<a class="ME" onclick="eliminar('.$mostrar['Id'].')">Eliminar</a>'.'</td>
 			</tr>
 			';
 		}

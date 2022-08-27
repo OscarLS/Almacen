@@ -28,6 +28,13 @@ $(document).on('keyup', '#busqueda', function()
 		}
 });
 
+function eliminar(id)
+{
+	const modal_containerE= document.getElementById('modal_containerE');
+	modal_containerE.classList.add('show');
+
+}
+
 function ver(id)
 {
 	$.ajax({
@@ -37,7 +44,7 @@ function ver(id)
 		success: function (data) {
 			$("#contenedor").html(data);
 			const modal_container= document.getElementById('modal_container');
-			modal_container.classList.add('show')
+			modal_container.classList.add('show');
 		},
 	});
 }
