@@ -1,6 +1,6 @@
 <div class="modal-container" id="modal_containerE">
   <!-- Inicio/Modal categoria -->
-  <div class="modalEl">
+  <div class="modal">
     <div class="contenedorModal">
       <header class="cabeceraModal">
         <!-- Cabecera -->
@@ -9,9 +9,6 @@
       <main class="cuerpoModal">
         <!-- Contenedor -->
         <div id="contenedorE">
-          <p>¿Que desea hacer?</p>
-          <button id="btnUno">Eliminar Este</button>
-          <button id="btnDos">Elimnar todos</button>
         </div>
       </main>
       <div id='contenedor'>

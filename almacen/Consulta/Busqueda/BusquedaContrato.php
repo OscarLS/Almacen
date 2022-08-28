@@ -42,9 +42,17 @@
                 <td class="Lista" >'.$mostrar['Programa'].'</td>
                 <td class="Lista" >'.$mostrar['Licitacion'].'</td>
                 <td class="Lista" >'.$mostrar['Proveedor'].'</td>
-				<td class="Lista" >'.'<a class="ME" id="btnVer" onclick="ver('.$mostrar['Id'].');" >Ver</a>'.'</td>
-				<td class="Lista" >'.'<a class="ME" href="ModificarProducto.php?id='.$mostrar['Id'].'">Modificar</a>'.'</td>
-				<td class="Lista" >'.'<a class="ME" onclick="eliminar('.$mostrar['Id'].')">Eliminar</a>'.'</td>
+								<td class="Lista" > <div class="dropdown">
+								<button class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+									Accion
+								</button>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#verModal" onclick="ver('.$mostrar['Id'].')">Ver</a></li>
+									<li><a class="dropdown-item" href="#">Modificar</a></li>
+									<li><a class="dropdown-item"  data-bs-toggle="modal" data-bs-target="#eliminarModal" onclick="eliminar('.$mostrar['Id'].')" >Eliminar</a></li>
+									<li><a class="dropdown-item" href="../../Reportes/reporte.php" onclick="descargar('.$mostrar['Id'].')" >Descarga</a></li>
+								</ul>
+							</div></td>
 			</tr>
 			';
 		}
